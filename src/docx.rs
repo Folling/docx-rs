@@ -156,7 +156,7 @@ impl DocxFile {
         let content_types = read!(ContentTypes, "[Content_Types].xml");
         let core = option_read!(Core, "docProps/core.xml");
         let document_rels = option_read!(Relationships, "word/_rels/document.xml.rels");
-        let document = read!(Document, "word/document.xml");
+        let document = read!(Document, "word/document2.xml");
         let font_table = option_read!(FontTable, "word/fontTable.xml");
         let rels = read!(Relationships, "_rels/.rels");
         let styles = option_read!(Styles, "word/styles.xml");
